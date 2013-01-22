@@ -8,7 +8,7 @@ clean:
 		rm -f large_input.txt
 
 gentest: generate_input.py
-	  python generate_input.py > large_input.txt
+		python generate_input.py > large_input.txt
 
 test: main gentest
-	  cat large_input.txt | ./unique
+		cat large_input.txt | ./unique
